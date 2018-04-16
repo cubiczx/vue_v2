@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Vue.js V2 V-Components</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+		<div class="row">
+            <div class="col-12">
+                <h1>Vue.js - Components</h1>
+            </div>
+			<div class="col-4">
+                <h2>Album</h2>
+                <common-list v-bind:lists="albums"></common-list>
+			</div>
+			<div class="col-4">
+                <h1>Posts</h1>
+                <common-list v-bind:lists="posts"></common-list>
+            </div>
+            <div class="col-4">
+                <h1>Photos</h1>
+                <common-list v-bind:lists="photos"></common-list>
+            </div>
+            <div class="col-4">
+                <h1>Photos Manual</h1>
+                <common-list v-bind:lists="photosM"></common-list>
+            </div>
+            <div class="col-12">
+                <h1>JSON</h1>
+                <pre>
+                    {{ $data }}
+                </pre>
+            </div>
+		</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/v-components.js"></script>
+</body>
+</html>
